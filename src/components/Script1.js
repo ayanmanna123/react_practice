@@ -48,7 +48,7 @@ export default function Script1(props) {
           value={text}
           onChange={handelOnChange}
           id="exampleFormControlTextarea1"
-          rows="8"
+          rows="1"
         ></textarea>
       </div> 
       <div className="containier my-3">

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function Navber(props) {
+   
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
@@ -17,7 +18,7 @@ export default function Navber(props) {
         <li className="nav-item">
           <a className="nav-link" href="/">Link</a>
         </li>
-         
+          
          
       </ul>
       <form className="d-flex" role="search">
