@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 export default function Navber(props) {
   return (
-    <nav
-      className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
-    >
+    <nav className={`navbar navbar-expand-lg`} id="navbar" >
+
+   
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           {props.title}
@@ -38,14 +38,50 @@ export default function Navber(props) {
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form> */}
-          <div className={`form-check form-switch text-light`}>
+           
+          <div className="form-check">
             <input
-              className="form-check-input mx-5"
-              onClick={props.toggleMode}
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefault"
+              className="form-check-input"
+              onClick={props.greenMode}
+              
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
             />
+             
+          </div>
+          <div className="form-check">
+            <input
+             className="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              
+              onClick={props.blueMode}
+              
+            />
+            
+          </div>
+          <div className="form-check">
+            <input
+             className="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault3"
+              onClick={props.blackMode}
+            />
+            
+          </div>
+          <div className="form-check">
+            <input
+             className="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault4"
+              
+              onClick={props.toggleMode}
+            />
+            
           </div>
         </div>
       </div>

@@ -52,7 +52,7 @@ export default function UpperCaseConverter() {
             </h2>
             <div
               id="collapseOne"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse"
 
               data-bs-parent="#accordionExample"
             >

@@ -71,40 +71,41 @@ export default function Script1(props) {
         
           value={text}
           onChange={handelOnChange}
-          id="exampleFormControlTextarea1"
-          style={{backgroundColor : props.mode=== 'dark'?'#343a40':'white'}}
+          id="ExampleFormControlTextarea1"
+           
           rows="8"
         ></textarea>
       </div>
       <div className="containier my-3">
-        <button className="btn btn-primary mx-2" onClick={handleUpclick}>
+        <button className="btn mx-2"id="upclickbtn" onClick={handleUpclick}>
           Convert to upper case
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleloclick}>
+        <button className="btn mx-2" id="lowercliclbtn" onClick={handleloclick}>
           Convert to lower case
         </button>
 
-        <button className="btn btn-primary mx-2" onClick={handlerevclick}>
+        <button className="btn mx-2" id="reversebtn" onClick={handlerevclick}>
           Convert to reverse
         </button>
-        <button className="btn btn-primary mx-2" onClick={handllnclick}>
+        <button className="btn mx-2" id="firstuppercasebtn" onClick={handllnclick}>
           Convert to first uppercase
         </button>
-        <button className="btn btn-success mx-2" onClick={handleCopy}>
+        <button className="btn mx-2" id="copybtn" onClick={handleCopy}>
           copy text
         </button>
-        <button className="btn btn-primary mx-2" onClick={reduceSpaces}>
+        <button className="btn  mx-2" id="clearbtn" onClick={reduceSpaces}>
           remove space
         </button>
-        <button className="btn btn-primary mx-2 mb-3" onClick={replaceSpaces}>
+        <button className="btn  mx-2 mb-3"id="Copybtn" onClick={replaceSpaces}>
           replace Spaces
         </button>
-        <button className="btn btn-success mx-2 mb-1" onClick={convertToBinary}>
+        <button className="btn mx-2 mb-1" id="binary" onClick={convertToBinary}>
           convert To Binary
         </button>
-        <button className="btn btn-success mx-2 " onClick={convertToText}>
+        <button className="btn mx-2 " id="desimal" onClick={convertToText}>
           convert To Binary
         </button>
+        
          
 
         <h1> Your text summary </h1>
