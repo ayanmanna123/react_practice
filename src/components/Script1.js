@@ -101,6 +101,9 @@ export default function Script1(props) {
         <button className="btn btn-success mx-2 " onClick={convertToText }>
         convert To Binary
         </button>
+        <button className="btn btn-success mx-2 " onClick={convertToText }>
+        convert To Binary
+        </button>
         <h1> Your text summary </h1>
         <div className="langth">
           total character {text.length} total word {text.split(" ").length}
