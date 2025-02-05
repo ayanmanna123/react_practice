@@ -5,6 +5,7 @@ export default function Script1(props) {
     console.log("was click");
     let newtext = text.toLocaleUpperCase();
     setText(newtext);
+    props.Showalert("converted to upper case","success")
   };
   const handleloclick = () => {
     console.log("was click");
@@ -38,17 +39,17 @@ export default function Script1(props) {
     setText(event.target.value);
   };
   const reduceSpaces = () => {
-    setText(text.replace(/\s+/g, " "));  
+    setText(text.replace(/\s+/g, " "));
   };
   const replaceSpaces = () => {
-    setText(text.replace(/\s+/g, "_")); 
+    setText(text.replace(/\s+/g, "_"));
   };
   const convertToBinary = () => {
     const binaryText = text
       .split("")
       .map((char) => char.charCodeAt(0).toString(2)) // Convert each character to binary
       .join(" ");
-      setText(binaryText);
+    setText(binaryText);
   };
   const convertToText = () => {
     const textOutput = text
@@ -66,9 +67,12 @@ export default function Script1(props) {
       <div className="mb-3">
         <textarea
           className="form-control"
+         
+        
           value={text}
           onChange={handelOnChange}
           id="exampleFormControlTextarea1"
+          style={{backgroundColor : props.mode=== 'dark'?'#343a40':'white'}}
           rows="8"
         ></textarea>
       </div>
@@ -90,20 +94,18 @@ export default function Script1(props) {
           copy text
         </button>
         <button className="btn btn-primary mx-2" onClick={reduceSpaces}>
-          remove space 
+          remove space
         </button>
         <button className="btn btn-primary mx-2 mb-3" onClick={replaceSpaces}>
-        replace Spaces
+          replace Spaces
         </button>
         <button className="btn btn-success mx-2 mb-1" onClick={convertToBinary}>
-        convert To Binary
+          convert To Binary
         </button>
-        <button className="btn btn-success mx-2 " onClick={convertToText }>
-        convert To Binary
+        <button className="btn btn-success mx-2 " onClick={convertToText}>
+          convert To Binary
         </button>
-        <button className="btn btn-success mx-2 " onClick={convertToText }>
-        convert To Binary
-        </button>
+
         <h1> Your text summary </h1>
         <div className="langth">
           total character {text.length} total word {text.split(" ").length}

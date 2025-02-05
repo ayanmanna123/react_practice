@@ -13,7 +13,7 @@ export default function UpperCaseConverter() {
         if(mystyle.color === 'black'){
             setMyStyle({
                 color: 'white',
-                backgroundColor: 'black',
+                backgroundColor: '#343a40',
                 border: '1px solid white'
                
             })
@@ -129,7 +129,7 @@ export default function UpperCaseConverter() {
         <div className="container my-4">
         <div className="form-check form-switch">
   <input onClick={togglestyle} className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-  <label className="form-check-label" for="flexSwitchCheckDefault"> {btntext}</label>
+  <label className="form-check-label" htmlFor="flexSwitchCheckDefault"> {btntext}</label>
 </div></div>
       </div>
       
